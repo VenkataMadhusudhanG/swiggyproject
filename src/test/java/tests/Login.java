@@ -43,9 +43,6 @@ public class Login {
 		lp.enternumber("7780632321");
 		
 		lp.authlogin();
-		//Thread.sleep(10000);
-		//lp.enterotp("");
-		//wait.until(ExpectedConditions.titleContains("Expected Title"));
 		lp.verifyotp();
 		Assert.assertEquals(driver.getTitle(), "Order food online from India's best food delivery service. Order from restaurants near you");
 
