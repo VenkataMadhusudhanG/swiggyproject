@@ -41,7 +41,6 @@ public class Login {
 	void loadtest() throws InterruptedException  {
 		lp.loginclick();
 		lp.enternumber("7780632321");
-		
 		lp.authlogin();
 		lp.verifyotp();
 		Assert.assertEquals(driver.getTitle(), "Order food online from India's best food delivery service. Order from restaurants near you");
